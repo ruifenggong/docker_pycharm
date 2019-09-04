@@ -97,11 +97,11 @@ lsmod | grep nouveau
 
 2. 直接在系统中查找“软件和更新”，在附加应用里面找到显卡的驱动（推荐430或者更新版本），直接应用更改，等待完成即可。
 
-   ![](pic\2019-09-03 19-24-41屏幕截图.png)
+   ![](https://github.com/ruifenggong/docker_pycharm/blob/master/pic/2019-09-03%2019-24-41%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
 
 3、完成后，打开一个终端，输入`nvidia-smi`，如果能显示以下信息，则安装成功。请确保CUDA的版本大于10.0
 
-![1567510231340](pic\1567510231340.png)
+![1567510231340](https://github.com/ruifenggong/docker_pycharm/blob/master/pic/1567510231340.png)
 
 4、如果上述方法无法正确安装显卡驱动，那么请[参考网络](https://blog.csdn.net/u014682691/article/details/80605201)上的解决方法，这里不再赘述。
 
@@ -147,7 +147,7 @@ sudo apt-get install docker-ce
 
 等待完成，输入`docker --version`验证是否成功，成功安装会显示版本信息。
 
-![1567510831510](pic\1567510831510.png)
+![1567510831510](https://github.com/ruifenggong/docker_pycharm/blob/master/pic/1567510831510.png)
 
 最后，把docker添加到用户组，免除每次都需要`sudo`的烦恼
 
@@ -209,7 +209,7 @@ docker run [-it] some-image
 docker ps
 ```
 
-![1567512261695](pic\1567512261695.png)
+![1567512261695](https://github.com/ruifenggong/docker_pycharm/blob/master/pic/1567512261695.png)
 
 列出所有的容器，包括运行的和不运行的
 
@@ -217,7 +217,7 @@ docker ps
 docker ps -a
 ```
 
-![1567512288152](pic\1567512288152.png)
+![1567512288152](https://github.com/ruifenggong/docker_pycharm/blob/master/pic/1567512288152.png)
 
 #### （3）容器的删除
 
@@ -290,7 +290,7 @@ $ sudo systemctl restart docker
 docker run --runtime=nvidia --rm nvidia/cuda:9.0-base nvidia-smi
 ```
 
-![1567511949078](pic\1567511949078.png)
+![1567511949078](https://github.com/ruifenggong/docker_pycharm/blob/master/pic/1567511949078.png)
 
 
 
@@ -310,7 +310,7 @@ nvidia-docker run --rm ufoym/deepo nvidia-smi
 
 如果能看到下图，则成功了
 
-![1567512091800](pic\1567512091800.png)
+![1567512091800](https://github.com/ruifenggong/docker_pycharm/blob/master/pic/1567512091800.png)
 
 
 
@@ -324,7 +324,7 @@ nvidia-docker run --rm ufoym/deepo nvidia-smi
 docker run -it ufoym/deepo
 ```
 
-![1567512980498](pic\1567512980498.png)
+![1567512980498](https://github.com/ruifenggong/docker_pycharm/blob/master/pic/1567512980498.png)
 
 先升级更新一下，输入
 
@@ -367,7 +367,7 @@ apt install openssh-server
 
 ```
 
-![1567564654300](pic\1567564654300.png)
+![1567564654300](https://github.com/ruifenggong/docker_pycharm/blob/master/pic/1567564654300.png)
 
 ### 2、更改root密码
 
@@ -540,7 +540,7 @@ Pycharm部分是在**本地电脑**（笔记本或台式电脑）上面实现的
 
 配置完成以后在项目解释器界面就会出现如下图所示，可以看到此时已经完成远程解释器的本地化：
 
-![img](https://pic4.zhimg.com/80/v2-ec57a3d1f720a829323d6976e7493fc7_hd.jpg)![1567562152761](pic\1567562152761.png)
+![img](https://pic4.zhimg.com/80/v2-ec57a3d1f720a829323d6976e7493fc7_hd.jpg)
 
 配置完成以后需要等本地和远程的环境同步一下，到这里，恭喜你，可以用最舒服的姿势。。。写代码了。
 
